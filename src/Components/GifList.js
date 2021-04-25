@@ -1,11 +1,17 @@
-import { Gif } from './Gif';
+import Gif from './Gif';
 
-const GifList = ({ gifs }) => {
+const GifList = ({ gifData }) => {
+
+    let gifs = gifData.map(gif => 
+        <Gif url={gif.images.downsized.url} />
+    )
+
     return (
         <>
-            <h1>{gifs?.url}</h1>
-            <img src={gifs[1]?.images.downsized.url} />
-            {/* <h1>{gifs[1].url}</h1> */}
+            <h1>GiftList</h1>
+            <ul>
+                {gifs}
+            </ul>
         </>
     )
 };

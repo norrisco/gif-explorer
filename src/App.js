@@ -9,6 +9,9 @@ const App = () => {
   const [gifData, setGifData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const api_key = 'b2sRfoYJSLxA8JdAujkeuH6eavKtbUb3' //Personal App Key
+  const api_key2 = 'dc6zaTOxFJmzC' //Shared Key
+  
   useEffect(() => {
     searchGiphy();
 
@@ -23,7 +26,7 @@ const App = () => {
   }, [])
 
   const searchGiphy = (query) => {
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
+    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=4&api_key=${api_key}`)
       .then(response => {
         setGifData(response.data.data);
         setLoading(false);

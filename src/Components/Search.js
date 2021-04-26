@@ -5,7 +5,7 @@ const Search = ({ searchGiphy }) => {
     const [searchText, setSearchText] = useState('');
 
     const onFinish = (e) => {
-        console.log(searchText);
+        console.log(`Searched: ${searchText}`);
         searchGiphy(searchText);
         setSearchText('');
     }

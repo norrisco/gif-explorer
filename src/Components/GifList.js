@@ -3,12 +3,14 @@ import Gif from './Gif';
 const GifList = ({ gifData }) => {
 
     let gifs = gifData.map(gif => 
-        <Gif url={gif.images.downsized.url} />
+        <Gif
+            url={gif.images.downsized.url} 
+            key={gif.id}
+        />
     )
 
     return (
         <>
-            <h1>GiftList</h1>
             <ul>
                 {gifs}
             </ul>

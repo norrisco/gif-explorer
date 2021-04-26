@@ -2,6 +2,8 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GifList from './Components/GifList';
+import Search from './Components/Search';
+import Header from './Components/Header';
 
 const App = () => {
   const [gifData, setGifData] = useState([]);
@@ -21,7 +23,10 @@ const App = () => {
   return (
     <div className="App">
 
-      <h1>Gifs</h1>
+      <Header />
+
+      <Search />
+      
       <GifList gifData={gifData} />
       
     </div>

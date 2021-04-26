@@ -7,10 +7,12 @@ import Header from './Components/Header';
 
 const App = () => {
   const [gifData, setGifData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     searchGiphy();
 
+    /////// Trending /////// 
     // axios.get(`http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC`)
     //   .then(res => {
     //     setGifData(res.data.data);
@@ -18,13 +20,13 @@ const App = () => {
     //   .catch(error => {
     //     console.log(error);
     //   })
-
   }, [])
 
   const searchGiphy = (query) => {
     axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
       .then(response => {
-        setGifData(response.data.data)
+        setGifData(response.data.data);
+        setLoading(false);
       })
       .catch(error => {
         console.log(error)
@@ -40,7 +42,11 @@ const App = () => {
 
       <Search searchGiphy={searchGiphy} />
       
-      <GifList gifData={gifData} />
+      {
+        loading
+        ? <p>Loading...</p>
+        : <GifList gifData={gifData} />
+      }
       
     </div>
   );

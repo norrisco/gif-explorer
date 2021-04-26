@@ -7,7 +7,7 @@ const Search = ({ searchGiphy }) => {
     const onFinish = (e) => {
         console.log(searchText);
         searchGiphy(searchText);
-        // setSearchText('');
+        setSearchText('');
     }
 
     const onSearchChange = (e) => {
@@ -19,7 +19,10 @@ const Search = ({ searchGiphy }) => {
             <Form onFinish={onFinish}>
                 <Form.Item>
 
-                    <Input onChange={onSearchChange} />
+                    <Input 
+                        onChange={onSearchChange} 
+                        value={searchText}
+                    />
 
                     <Button htmlType="submit" style={{color:'#FFF', backgroundColor: '#00CADA'}} >
                         Search

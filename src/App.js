@@ -9,14 +9,27 @@ const App = () => {
   const [gifData, setGifData] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC`)
-      .then(res => {
-        setGifData(res.data.data);
+    searchGiphy();
+
+    // axios.get(`http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC`)
+    //   .then(res => {
+    //     setGifData(res.data.data);
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    //   })
+
+  }, [])
+
+  const searchGiphy = (query) => {
+    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
+      .then(response => {
+        setGifData(response.data.data)
       })
       .catch(error => {
-        console.log(error);
-      })
-  }, [])
+        console.log(error)
+      });
+  }
 
   // console.log(gifData);
 
@@ -25,7 +38,7 @@ const App = () => {
 
       <Header />
 
-      <Search />
+      <Search searchGiphy={searchGiphy} />
       
       <GifList gifData={gifData} />
       

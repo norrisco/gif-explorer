@@ -1,10 +1,33 @@
-const Search = () => {
+import { useState } from 'react';
+import  { Form, Input, Button } from 'antd';
+
+const Search = ({ searchGiphy }) => {
+    const [searchText, setSearchText] = useState('');
+
+    const onFinish = (e) => {
+        console.log(searchText);
+        searchGiphy(searchText);
+        // setSearchText('');
+    }
+
+    const onSearchChange = (e) => {
+        setSearchText(e.target.value);
+    }
+
     return (
         <>
-            <form>
-                <input type='text' />
-                <input type='submit' />
-            </form>
+            <Form onFinish={onFinish}>
+                <Form.Item>
+
+                    <Input onChange={onSearchChange} />
+
+                    <Button htmlType="submit" style={{color:'#FFF', backgroundColor: '#00CADA'}} >
+                        Search
+                    </Button>
+
+                </Form.Item>
+                
+            </Form>
         </>
     )
 }

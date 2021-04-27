@@ -15,3 +15,41 @@ h1 {
 .searchContainer {
   padding: 0px 20px 20px 20px;
 }
+
+.gifListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+  margin: 5px 20px 20px 20px;
+}
+
+.gridList {
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap !important; */
+  /* transform: translateZ(0) !important; */
+}
+
+.gridList::-webkit-scrollbar {
+  display: none;
+}
+
+.gridListTile {
+  /* height: 50% !important; */
+
+  /* min-width: 480px !important; */
+  /* min-height: 480px !important; */
+
+  /* max-width: 960px !important; */
+  /* max-height: 960px !important; */
+
+  margin-bottom: 100px;
+}
+
+.gifImage {
+  min-width: 100% !important;
+  /* width: 100% !important; */
+}

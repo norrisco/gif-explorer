@@ -1,9 +1,17 @@
 .App {
   width: 100%;
-  background-color: rgb(240, 240, 240)211, 211);
+  background-color: rgb(240, 240, 240);
 }
 
 h1 {
   margin: 0;
   padding: 0;
+}
+
+.headerContainer {
+  padding: 20px 20px 20px 20px;
+}
+
+.searchContainer {
+  padding: 0px 20px 20px 20px;
 }

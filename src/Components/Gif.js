@@ -1,10 +1,11 @@
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+
 const Gif = ({ url }) => {
     return (
-        <>
-            <li>
-                <img src={url} />
-            </li>
-        </>
+        <Paper>
+            <img src={url} style={{width: '100%'}}/>
+        </Paper>
     )
 };
 

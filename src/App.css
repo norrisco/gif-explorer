@@ -1,15 +1,9 @@
 .App {
-  text-align: center;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
   width: 100%;
+  background-color: rgb(240, 240, 240)211, 211);
+}
+
+h1 {
   margin: 0;
   padding: 0;
 }

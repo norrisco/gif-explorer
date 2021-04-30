@@ -1,32 +1,40 @@
 import '../App.css';
 import Gif from './Gif';
 import NoGifsFound from './NoGifsFound';
-import { GridList, GridListTile } from "@material-ui/core";
+import Masonry from 'react-masonry-css';
 
-const GifList = ({ gifData }) => {
+const GifList_Test = ({ gifData }) => {
 
     let _GifList;
 
     (gifData.length > 0)
     ? _GifList = gifData.map(gif => 
-        <GridListTile key={gif.id} className='gridListTile'>
           <Gif
-            url={gif.images.original.url} 
+            url={gif.images.fixed_width.url} 
             key={gif.id}
             />
-        </GridListTile>
         )
     : _GifList = <NoGifsFound />
 
+    const breakpoints = {
+        default: 4,
+        1200: 3,
+        800: 2,
+        500: 1,
+    }
+
     return (
         <div className='gifListContainer'>
-
-            <GridList cols={4} spacing={10} className='gridList' cellHeight={'auto'}>
+            <Masonry
+                breakpointCols={breakpoints}
+                className='my-masonry-grid'
+                columnClassName='my-masonry-grid_column'
+            >
                 {_GifList}
-            </GridList>
+            </Masonry>
 
         </div>
     )
 };
 
-export default GifList;
+export default GifList_Test;

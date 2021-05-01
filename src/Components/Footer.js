@@ -22,6 +22,11 @@ const useStyles = makeStyles((theme) => ({
             paddingBottom: '30px',
         },
     },
+    footerText: {
+        color: '#ffe1cf',
+        fontSize: '24px',
+        margin: 0,
+    },
     attributions: {
         fontSize: '6px',
         display: 'flex',
@@ -43,7 +48,7 @@ const Footer = () => {
                     </ScrollLink>
                 </Grid> */}
                 <Grid item>
-                    <Typography variant="body1">Designed &amp; Built by Norris Co - 2021</Typography>
+                    <h4 className={classes.footerText}>Designed &amp; Built by Norris Co - 2021</h4>
                 </Grid>
 
             </Grid>

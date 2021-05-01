@@ -1,6 +1,6 @@
 .App {
   width: 100%;
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240); */
 }
 
 h1 {
@@ -11,15 +11,66 @@ h1 {
 .headerContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px 20px 20px 20px;
 }
 
+/********** Search **********/
 .searchContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0px 20px 20px 20px;
+  /* background-color: black; */
 }
 
+/***** Input *****/
+.searchInputMUI {
+  background: linear-gradient(90deg, #eeeeee 30%, #dddddd 80%);
+  color: #e6a780 !important;
+  font-weight: bold !important;
+  font-size: 26px !important;
+}
+
+.searchInput {
+  height: 48px;
+  width: 75.5%;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #eeeeee 30%, #dddddd 80%);
+  color: #e6a780;
+  font-weight: bold;
+  font-size: 26px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+  padding: 0 20px;
+}
+
+.searchInput::placeholder {
+  color: #e6a780;
+  font-weight: bold;
+  transition: color 300ms ease;
+}
+
+.searchInput:focus::placeholder {
+  color: transparent;
+}
+
+
+/***** Button *****/
+.searchIconButtonMUI {
+  color: #de6262 !important;
+}
+
+.searchIconButton {
+  width: 15%;
+  background-color: #dddddd !important;
+  border-radius: 0 5px 5px 0 !important;
+  margin-bottom: 9.85px !important;
+}
+
+
+/********** Gifs **********/
 .gifListContainer {
   display: flex;
   flex-wrap: wrap;
@@ -41,22 +92,6 @@ h1 {
   display: none;
 }
 
-.gridListTile {
-  margin: 40px 0 40px 0;
-
-  /* height: 50% !important; */
-  /* min-width: 480px !important; */
-  /* min-height: 480px !important; */
-  /* max-width: 960px !important; */
-  /* max-height: 960px !important; */
-}
-
-.gifImage {
-  /* min-width: 100% !important; */
-  min-height: 100% !important;
-}
-
-
 /* Masonry */
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
@@ -66,12 +101,12 @@ h1 {
   width: auto;
 }
 .my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
+  padding-left: 35px; /* gutter size */
   background-clip: padding-box;
 }
 
 /* Style your items */
 .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  /* background: black; */
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  /* background: grey; */
 }

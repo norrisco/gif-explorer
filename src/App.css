@@ -27,9 +27,17 @@ h1 {
 /***** Input *****/
 .searchInputMUI {
   background: linear-gradient(90deg, #eeeeee 30%, #dddddd 80%);
-  color: #e6a780 !important;
+  /* color: #e6a780 !important; */
+  color: #e47835 !important;
   font-weight: bold !important;
   font-size: 26px !important;
+  box-shadow: 0 4px 6px 3px rgba(222, 98, 98, .5) !important;
+  /* outline: none !important; */
+  /* border: none !important; */
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 2px ridge #ff7119 !important;
 }
 
 .searchInput {

@@ -39,7 +39,8 @@ const App = () => {
       });
   }
 
-  console.log(gifData);
+  // For testing purposes
+  // console.log(gifData);
 
   return (
     <div className="App">

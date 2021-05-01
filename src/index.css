@@ -5,3 +5,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(45deg, #de6262 30%, #ffb88c 80%);
 }
+
+/* Text Highlight */
+body ::-moz-selection { /* Firefox */
+  color: #1E3D59;
+  background: #f5efde;
+}
+
+body ::selection {
+  color: #1E3D59;
+  background: #f5efde;
+}

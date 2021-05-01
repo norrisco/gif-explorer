@@ -12,6 +12,8 @@ const GifList_Test = ({ gifData }) => {
           <Gif
             url={gif.images.fixed_width.url} 
             key={gif.id}
+            linkUrl={gif.images.original.url}
+            title={gif.title}
             />
         )
     : _GifList = <NoGifsFound />

@@ -13,7 +13,7 @@ const App = () => {
 
   const api_key = 'b2sRfoYJSLxA8JdAujkeuH6eavKtbUb3' //Personal App Key
   const api_key2 = 'dc6zaTOxFJmzC' //Shared Key
-  const query_limit = 12;
+  const query_limit = 24;
   
   useEffect(() => {
     searchGiphy();

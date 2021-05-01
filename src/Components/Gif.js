@@ -5,7 +5,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 const Gif = ({ url, linkUrl, title }) => {
     return (
         <Paper 
-            style={{backgroundColor: '#eeeeee', padding: '3px 3px 15px 3px'}}
+            style={{backgroundColor: '#eeeeee', padding: '3px 3px 12px 3px'}}
             elevation={24}
             square={false}
         >

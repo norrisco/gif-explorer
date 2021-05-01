@@ -27,12 +27,18 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '24px',
         margin: 0,
     },
-    attributions: {
-        fontSize: '6px',
+    attributionsContainer: {
         display: 'flex',
         justifyContent: 'flex-end',
         margin: '15px 5px 5px 5px',
     },
+    attributionText: {
+        fontSize: '6px',
+        textDecoration: 'none',
+        color: '#ffb88c',
+        filter: 'opacity(0.4)',
+        cursor: 'default',
+    }
     
 }));
 
@@ -52,8 +58,8 @@ const Footer = () => {
                 </Grid>
 
             </Grid>
-            <div className={classes.attributions}>
-                <Typography variant="body4"><a href='https://icons8.com/' target='_blank' style={{textDecoration: 'none', filter: 'opacity(0.4)'}}>Icons8</a></Typography>
+            <div className={classes.attributionsContainer}>
+                <a href='https://icons8.com/' target='_blank' className={classes.attributionText} >Icons8</a>
             </div>
         </div>
     )

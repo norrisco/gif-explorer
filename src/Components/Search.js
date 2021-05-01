@@ -74,7 +74,6 @@ const Search = ({ searchGiphy }) => {
                         autoFocus
                         autoComplete
                         placeholder='cats and dogs'
-                        fullWidth={true}
                         endAdornment={
                             <InputAdornment position='end'>
                                 <IconButton type='submit'>

@@ -26,6 +26,7 @@ h1 {
 
 /***** Input *****/
 .searchInputMUI {
+  padding: 0 0 0 10px;
   background: linear-gradient(90deg, #eeeeee 30%, #dddddd 80%);
   /* color: #e6a780 !important; */
   color: #e47835 !important;
@@ -40,6 +41,21 @@ h1 {
   border: 2px ridge #ff7119 !important;
 }
 
+@media only screen and (min-width: 400px) {
+  .searchInputMUI { width: 370px !important};
+}
+
+@media only screen and (min-width: 500px) {
+  .searchInputMUI { width: 445px !important};
+}
+
+@media only screen and (min-width: 800px) {
+  .searchInputMUI { width: 685px !important};
+}
+
+@media only screen and (min-width: 1200px) {
+  .searchInputMUI { width: 750px !important};
+}
 .searchInput {
   height: 48px;
   width: 75.5%;

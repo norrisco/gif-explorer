@@ -29,7 +29,7 @@ const App = () => {
   }, [])
 
   const searchGiphy = (query = 'dog') => {
-    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit=${query_limit}&api_key=${api_key}/`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${api_key}&limit=${query_limit}`)
       .then(response => {
         setGifData(response.data.data);
         setLoading(false);

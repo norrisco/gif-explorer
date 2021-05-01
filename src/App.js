@@ -5,6 +5,7 @@ import axios from 'axios';
 import GifList from './Components/GifList';
 import Search from './Components/Search';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 const App = () => {
   const [gifData, setGifData] = useState([]);
@@ -53,6 +54,8 @@ const App = () => {
         // : <GifList_Old gifData={gifData} /> 
       }
       
+      <Footer />
+
     </div>
   );
 }

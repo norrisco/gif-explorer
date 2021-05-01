@@ -56,6 +56,13 @@ h1 {
 @media only screen and (min-width: 1200px) {
   .searchInputMUI { width: 750px !important};
 }
+
+.giphyAttribution {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 10px 5px 0;
+}
+
 .searchInput {
   height: 48px;
   width: 75.5%;

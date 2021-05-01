@@ -3,12 +3,18 @@
   /* background-color: rgb(240, 240, 240); */
 }
 
-h1 {
+.mainTitle {
   margin: 8px 0 0 10px;
   padding: 0;
   font-size: 68px;
-  color: #ffe1cf;
-  text-shadow: -2px 2px 3px #de6262;
+  color: #fff8dc;
+  text-shadow: 2px 4px 3px #423e00 ;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .headerContainer {

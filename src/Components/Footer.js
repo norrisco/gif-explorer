@@ -26,6 +26,12 @@ const useStyles = makeStyles((theme) => ({
         color: '#ffe1cf',
         fontSize: '24px',
         margin: 0,
+        '-webkit-touch-callout': 'none',
+          '-webkit-user-select': 'none',
+          '-khtml-user-select': 'none',
+          '-moz-user-select': 'none',
+          '-ms-user-select': 'none',
+          'user-select': 'none',
     },
     attributionsContainer: {
         display: 'flex',

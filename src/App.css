@@ -96,6 +96,15 @@
 }
 
 
+/* Loading */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 /********** Masonry **********/
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */

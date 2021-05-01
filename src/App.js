@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import GifList from './Components/GifList';
 import Search from './Components/Search';
 import Header from './Components/Header';
@@ -48,9 +49,8 @@ const App = () => {
       <Search searchGiphy={searchGiphy} />
       {
         loading
-        ? <p>Loading...</p>
+        ? <div className='loading'><CircularProgress color='secondary' /></div>
         : <GifList gifData={gifData} /> 
-        // : <GifList_Old gifData={gifData} /> 
       }
       
       <Footer />

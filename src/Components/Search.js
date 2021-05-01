@@ -26,7 +26,7 @@ const Search = ({ searchGiphy }) => {
                         onChange={onSearchChange} 
                         value={searchText}
                         autoFocus
-                        placeholder='cats and dogs'
+                        placeholder='jumping dogs'
                         endAdornment={
                             <InputAdornment position='end'>
                                 <IconButton type='submit'>

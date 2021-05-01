@@ -1,7 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-// import GifList_Old from './Components/GifList_Test';
 import GifList from './Components/GifList';
 import Search from './Components/Search';
 import Header from './Components/Header';

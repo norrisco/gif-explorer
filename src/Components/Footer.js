@@ -38,6 +38,22 @@ const useStyles = makeStyles((theme) => ({
         color: '#ffb88c',
         filter: 'opacity(0.4)',
         cursor: 'default',
+    },
+    mySite: {
+        textDecoration: 'none',
+        color: 'white',
+        fontSize: '30px',
+        borderRadius: '10px',
+        padding: '2px',
+        textShadow: '1px 3px 2px #423e00',
+        transition: 'all 200ms ease-in-out',
+        '&:hover': {
+            color: '#de6262',
+            backgroundColor: '#ffb88c',
+            textShadow: '-2px 3px 2px #fff',
+            margin: '0 20px 0 20px',
+            
+        }
     }
     
 }));
@@ -54,7 +70,9 @@ const Footer = () => {
                     </ScrollLink>
                 </Grid> */}
                 <Grid item>
-                    <h4 className={classes.footerText}>Designed &amp; Built by Norris Co - 2021</h4>
+                    <h4 className={classes.footerText}>Designed &amp; Built by 
+                    <a href='https://norrisspencer.co/' target='_blank' className={classes.mySite}> Norris Co </a>
+                     2021</h4>
                 </Grid>
 
             </Grid>

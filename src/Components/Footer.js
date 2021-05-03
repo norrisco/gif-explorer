@@ -25,13 +25,17 @@ const useStyles = makeStyles((theme) => ({
     footerText: {
         color: '#ffe1cf',
         fontSize: '24px',
-        margin: 0,
+        margin: '0 1px 0 1px',
         '-webkit-touch-callout': 'none',
-          '-webkit-user-select': 'none',
-          '-khtml-user-select': 'none',
-          '-moz-user-select': 'none',
-          '-ms-user-select': 'none',
-          'user-select': 'none',
+        '-webkit-user-select': 'none',
+        '-khtml-user-select': 'none',
+        '-moz-user-select': 'none',
+        '-ms-user-select': 'none',
+        'user-select': 'none',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '20px',
+            margin: '0 2px 10px 2px',        
+        }
     },
     attributionsContainer: {
         display: 'flex',

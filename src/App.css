@@ -18,6 +18,12 @@
   user-select: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .mainTitle {
+    font-size: 60px;
+  }
+}
+
 .headerContainer {
   display: flex;
   justify-content: center;
